@@ -1,3 +1,4 @@
+
 <?php 
 
 ##pull full project from github.
@@ -15,3 +16,7 @@ php artisan clear:cache
 2) echo "<pre>";print_r($var);exit;
 3) echo $var;exit;
 4) return $request->all();
+
+## important commands
+1) composer dump-autoload
+
