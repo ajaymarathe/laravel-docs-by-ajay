@@ -83,3 +83,8 @@ public function boot()
     Schema::defaultStringLength(191);
 }
 ```
+
+## Important tips
+```
+- When you change the .env file then don't forget to recompile server.
+```
