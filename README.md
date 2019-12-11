@@ -24,10 +24,9 @@ php artisan clear:cache
 ```
 
 ## important commands
-```
-- composer dump-autoload
+```- composer dump-autoload
 - php artisan make:model post  -mcrf -> To create model with migration + controller + resource + factory.
-
+- php artisan route:list -> To show all routes in api.php
 ```
 
 ## work on laravel-api
