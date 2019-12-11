@@ -89,3 +89,72 @@ public function boot()
 ```
 - When you change the .env file then don't forget to recompile server.
 ```
+
+## Work on ApiResources
+```
+/** Post Resource**/
+<?php
+
+namespace App\Http\Resources;
+
+use Illuminate\Http\Resources\Json\JsonResource;
+use App\post;
+use App\User;
+
+class PostResource extends JsonResource
+{
+    /**
+     * Transform the resource into an array.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return array
+     */
+    public function toArray($request)
+    {
+        $Created_at = Carbon::parse($this->created_at)->diffForHumans();
+        $Updated_at = Carbon::parse($this->updated_at)->diffForHumans();
+
+        return [
+            'id' => $this->id,
+            'title' => $this->title,
+            'slug' => $this->slug,
+            'description' => $this->body,
+            'image' => $this->image,
+            // 'user' => auth()->guard('api')->user()->name,
+            'user' =>  new UserResource($this->user),
+            'created_at' =>  $Created_at,
+            'updated_at' => $Updated_at,
+        ];
+    }
+}
+
+
+/** User resouce **/
+<?php
+
+namespace App\Http\Resources;
+
+use Illuminate\Http\Resources\Json\JsonResource;
+
+class UserResource extends JsonResource
+{
+    /**
+     * Transform the resource into an array.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return array
+     */
+    public function toArray($request)
+    {
+        $Created_at = Carbon::parse($this->created_at)->diffForHumans();
+        $Updated_at = Carbon::parse($this->updated_at)->diffForHumans();
+        return [
+            'id' => $this->id,
+            'name' => $this->name,
+            'email' => $this->email,
+            'created_at' => $Created_at,
+            'updated_at' => $Updated_at,
+        ];
+    }
+}
+```
