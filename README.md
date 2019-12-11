@@ -24,7 +24,8 @@ php artisan clear:cache
 ```
 
 ## important commands
-```- composer dump-autoload
+```
+- composer dump-autoload
 - php artisan make:model post  -mcrf -> To create model with migration + controller + resource + factory.
 - php artisan route:list -> To show all routes in api.php
 ```
@@ -32,7 +33,8 @@ php artisan clear:cache
 ## work on laravel-api
 
 ## Add cors support to laravel
-```/* cors origin  */
+```
+/* cors origin  */
 header("Access-Control-Allow-Origin: *");
 header("Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept,Authorization ");
 header("Access-Control-Allow-Methods: GET, POST, OPTIONS, PUT, PATCH, DELETE");
