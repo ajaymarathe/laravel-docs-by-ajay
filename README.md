@@ -30,6 +30,7 @@ php artisan clear:cache
 - php artisan route:list -> To show all routes in api.php.
 - php artisan migrate -> migrate the all migrations
 - php artisan migrate:fresh --seed -> fresh migrate with seeds.
+- php artisan make:resource User -> To create resource
 ```
 
 ## Work on laravel-api
