@@ -28,8 +28,8 @@ php artisan clear:cache
 - composer dump-autoload -> It just regenerates the list of all classes that need to be included in the project.
 - php artisan make:model post  -mcrf -> To create model with migration + controller + resource + factory.
 - php artisan route:list -> To show all routes in api.php.
-- php artisan migrate -> create migrations.
-- php artisan migrate:fresh --seed -> To create fresh migrate with seeds.
+- php artisan migrate -> migrate the all migrations
+- php artisan migrate:fresh --seed -> fresh migrate with seeds.
 ```
 
 ## Work on laravel-api
