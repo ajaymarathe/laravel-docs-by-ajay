@@ -1,7 +1,7 @@
 # laravel-docs-by-ajay
 Hi there, this is easy Laravel docs with small code snippets which is very helpful to understand whole syntax of Laravel :)
 
-## pull full project from github.
+## Pull full project from github.
 ```
 1) composer install
 2) setup .env
@@ -9,7 +9,7 @@ Hi there, this is easy Laravel docs with small code snippets which is very helpf
 4) php artisan serve
 ```
 
-## clear cache
+## Clear cache
 ```
 php artisan config:cache
 php artisan clear:cache
@@ -23,14 +23,14 @@ php artisan clear:cache
 4) return $request->all();
 ```
 
-## important commands
+## Important commands
 ```
 - composer dump-autoload -> It just regenerates the list of all classes that need to be included in the project.
 - php artisan make:model post  -mcrf -> To create model with migration + controller + resource + factory.
 - php artisan route:list -> To show all routes in api.php
 ```
 
-## work on laravel-api
+## Work on laravel-api
 ```
 /* post example  */
 Route::apiResource('posts', 'PostController');
