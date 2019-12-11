@@ -31,6 +31,10 @@ php artisan clear:cache
 ```
 
 ## work on laravel-api
+```
+/* post example  */
+Route::apiResource('posts', 'PostController');
+```
 
 ## Add cors support to laravel
 ```
