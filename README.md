@@ -70,3 +70,14 @@ $factory->define(Post::class, function (Faker $faker) {
     ];
 });
 ```
+
+## Some common errors
+```
+/* Specified key was too long error */
+use Illuminate\Support\Facades\Schema;
+
+public function boot()
+{
+    Schema::defaultStringLength(191);
+}
+```
