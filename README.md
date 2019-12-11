@@ -164,3 +164,4 @@ class UserResource extends JsonResource
     }
 }
 ```
++ [Learn more](https://github.com/ajaymarathe/bootcatch-blogging-api-routes-laravel/tree/master/app/Http/Resources)
