@@ -39,3 +39,30 @@ header("Access-Control-Allow-Origin: *");
 header("Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept,Authorization ");
 header("Access-Control-Allow-Methods: GET, POST, OPTIONS, PUT, PATCH, DELETE");
 ```
+
+## Work on Factories
+```
+<?php
+
+/* @var $factory \Illuminate\Database\Eloquent\Factory */
+
+use App\Post;
+use Faker\Generator as Faker;
+
+$factory->define(Post::class, function (Faker $faker) {
+    $title = $faker->sentence();
+    return [
+        'title' => $title,
+        'slug' => str_slug($title),
+        'body' => $faker->text,
+        'image' => $faker->text,
+        'category' => $faker->word,
+        'category_id' => function () {
+            return \App\Category::all()->random();
+        },
+        'user_id' => function () {
+            return \App\User::all()->random();
+        }
+    ];
+});
+```
