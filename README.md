@@ -98,8 +98,11 @@ public function boot()
 namespace App\Http\Resources;
 
 use Illuminate\Http\Resources\Json\JsonResource;
-use App\post;
 use App\User;
+use App\Category;
+use Carbon\Carbon;
+use App\Http\Resources\User as UserResource;
+use App\Http\Resources\Category as CategoryResource;
 
 class PostResource extends JsonResource
 {
@@ -134,7 +137,10 @@ class PostResource extends JsonResource
 
 namespace App\Http\Resources;
 
+namespace App\Http\Resources;
 use Illuminate\Http\Resources\Json\JsonResource;
+use Carbon\Carbon; 
+use App\Http\Resources\Post as PostResource;
 
 class UserResource extends JsonResource
 {
