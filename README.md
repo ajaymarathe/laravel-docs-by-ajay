@@ -24,5 +24,10 @@ php artisan clear:cache
 ```
 
 ## important commands
+```
+- composer dump-autoload
+- php artisan make:model post  -mcrf -> To create model with migration + controller + resource + factory.
 
-1) composer dump-autoload
+```
+
+## work on laravel-api
