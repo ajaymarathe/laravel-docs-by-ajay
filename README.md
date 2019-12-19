@@ -165,3 +165,18 @@ class UserResource extends JsonResource
 }
 ```
 + [Learn more](https://github.com/ajaymarathe/bootcatch-blogging-api-routes-laravel/tree/master/app/Http/Resources)
+
+## Deploy Laravel project to cpanel
+
+- Make zip of all your project
+- Upload it on server
+- Unzip it
+- Hit following commmands
+```
+- composer dump-autoload
+- composer install or composer update
+- php artisan config:cache
+```
+- check if it is working or not, if still not then maybe it's file permission issue go to `public/index.php` and chaged file permission `644`.
+- hope this helps.
+
