@@ -178,5 +178,7 @@ class UserResource extends JsonResource
 - php artisan config:cache
 ```
 - check if it is working or not, if still not then maybe it's file permission issue go to `public/index.php` and chaged file permission `644`.
+- got this error `Declaration of Symfony\Component\Translation\TranslatorInterface::setLocale($locale) must be compatible with Symfony\Contracts\Translation\LocaleAwareInterface::setLocale(string $locale)`
+ then simply add this ` "symfony/translation": "4.3.8" ` in your `composer.json` and hit `composer update` command.
 - hope this helps.
 
