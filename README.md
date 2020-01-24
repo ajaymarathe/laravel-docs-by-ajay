@@ -31,6 +31,7 @@ php artisan clear:cache
 - php artisan migrate -> migrate the all migrations
 - php artisan migrate:fresh --seed -> fresh migrate with seeds.
 - php artisan make:resource User -> To create resource
+- laravel new -> // create project inside directory.
 ```
 
 ## Work on laravel-api
