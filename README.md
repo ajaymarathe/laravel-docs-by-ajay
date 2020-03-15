@@ -1,4 +1,4 @@
-# laravel-docs-by-ajay
+# Laravel Docs by Ajay
 Hi there, this is easy Laravel docs with small code snippets which is very helpful to understand whole syntax of Laravel :)
 
 ## Pull full project from github.
